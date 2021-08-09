@@ -1,9 +1,7 @@
-/* eslint-disable no-console */
 /* eslint-disable max-len */
 export const getMovies = async () => {
   const res = await fetch('https://ivys-house-of-horror.herokuapp.com/api/movies/');
   const movies = await res.json();
-  console.log(movies);
   return movies;
 };
 
@@ -30,7 +28,7 @@ export const deleteMovie = async (id) => {
   return deletedMovie;
 };
 
-export const updateMovie = async (movie) => {
+export const updateMovie = async (movie, id) => {
   const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${id}`, {
     method: 'PUT',
     headers: { 'content-type': 'application/json' },

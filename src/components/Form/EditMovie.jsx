@@ -13,7 +13,7 @@ const EditMovie = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const editedMovie = await updateMovie;
+    const editedMovie = await updateMovie();
     console.log(editedMovie);
   };
 

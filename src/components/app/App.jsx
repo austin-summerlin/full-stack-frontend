@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Home from '../Home/Home';
 import FormPage from '../Form/FormPage';
 import MovieDetails from '../Movie/MovieDetailPage';
 import EditFormPage from '../Form/EditFormPage';
@@ -13,7 +12,7 @@ export default function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" />
           <Route exact path="/movies" component={MovieDetails} />
           <Route exact path="/movies/add" component={FormPage} />
           <Route exact path="/movies/:id/edit" component={EditFormPage} />

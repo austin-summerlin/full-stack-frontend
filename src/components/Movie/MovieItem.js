@@ -13,7 +13,7 @@ const Movie = ({ title, genre, url }) => (
 Movie.propTypes = {
   title: PropTypes.string.isRequired,
   genre: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
 };
 
 export default Movie;

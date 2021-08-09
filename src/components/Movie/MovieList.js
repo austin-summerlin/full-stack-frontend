@@ -2,28 +2,26 @@
 import React from 'react';
 import { useMovies } from '../../hooks/movies';
 import Movie from './MovieItem';
+import { Link } from 'react-router-dom';
 
-function MovieList() {
-  const { movies } = useMovies();
+const MovieList = () => {
+  const { movies, loading } = useMovies();
+  if (loading) return <h1>Loading</h1>;
+
+  const movieElements = movies.map((movie) => (
+    <li key={movie.id}>
+      <Link to={`/movie/${movie.id}`}>
+        <Movie {...movie} />
+      </Link>
+    </li>
+  ));
 
   return (
-    <ul aria-label="movies">
-      {movies.map((movie) => {
-        return (
-          <li key={movie.id}>
-            <Movie
-              image={movie.url}
-              title={movie.title}
-              year={movie.year}
-              genre={movie.genre}
-              director={movie.director}
-              country={movie.country}
-            />
-          </li>
-        );
-      })}
+    <ul>
+      {movieElements}
     </ul>
   );
-}
+};
+
 
 export default MovieList;
