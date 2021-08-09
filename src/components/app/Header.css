@@ -8,7 +8,7 @@
 
 .Header h1 {
   display: grid;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-right: 190px;
   color: red;
   text-shadow: 2px 2px black;

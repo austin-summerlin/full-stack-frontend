@@ -11,7 +11,7 @@ const MovieList = () => {
 
   const movieElements = movies.map((movie) => (
     <li key={movie.id} className={style.li}>
-      <Link to={`/movies/${movie.id}`}>
+      <Link to={`/movies/${movie.id}`} className={style.link}>
         <Movie {...movie} />
       </Link>
     </li>

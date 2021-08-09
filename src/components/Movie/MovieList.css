@@ -1,9 +1,16 @@
 .MovieList {
   text-align:center;
   text-decoration: none;
+  width: 100px;
 }
 
+.MovieList section {
+  width: 50px;
+}
+
+
 .MovieList ul {
+  width: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -21,4 +28,10 @@
   border: 1px solid #ccc;
 
   text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.Link {
+  list-style: none;
 }
