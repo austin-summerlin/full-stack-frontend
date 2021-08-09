@@ -2,8 +2,47 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <header
+    class="Header"
+  >
+    <h1>
+      Ivy's House of Horror
+    </h1>
+    <nav>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/movies"
+      >
+        Movies
+      </a>
+      <a
+        href="/movies/add"
+      >
+        Add Movie
+      </a>
+    </nav>
+  </header>
+  <div
+    class="Home"
+  >
+    <header>
+      <h2>
+        Welcome
+      </h2>
+    </header>
+    <p>
+      <a
+        href="/movies"
+      >
+        See the List
+      </a>
+    </p>
+  </div>
 </DocumentFragment>
 `;

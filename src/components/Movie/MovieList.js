@@ -3,23 +3,27 @@ import React from 'react';
 import { useMovies } from '../../hooks/movies';
 import Movie from './MovieItem';
 import { Link } from 'react-router-dom';
+import style from './MovieList.css';
 
 const MovieList = () => {
   const { movies, loading } = useMovies();
-  if (loading) return <h1>Loading</h1>;
+
 
   const movieElements = movies.map((movie) => (
-    <li key={movie.id}>
-      <Link to={`/movie/${movie.id}`}>
+    <li key={movie.id} className={style.li}>
+      <Link to={`/movies/${movie.id}`}>
         <Movie {...movie} />
       </Link>
     </li>
   ));
-
+  if (loading) return <h1>Loading</h1>;
   return (
-    <ul>
-      {movieElements}
-    </ul>
+    <section className={style.MoviesList}>
+      <h1>Movies</h1>
+      <ul>
+        {movieElements}
+      </ul>
+    </section>
   );
 };
 

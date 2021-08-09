@@ -4,7 +4,7 @@ import style from './Footer.css';
 class Footer extends Component {
   render() {
     return (
-      <footer className={style.footer}>
+      <footer className={style.Footer}>
         &copy; 2021 Ivy&#39;s House of Horror
       </footer>
     );

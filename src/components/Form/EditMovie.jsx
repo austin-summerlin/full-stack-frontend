@@ -1,9 +1,16 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { useMovie } from '../../hooks/movies';
+// import { useForm } from 'react-hook-form';
 import { updateMovie } from '../../services/movies-api';
 
 const EditMovie = () => {
+  // const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { id } = useParams();
+  const movie = useMovie(id);
+
   const [title, setTitle] = useState('');
   const [genre, setGenre] = useState('');
   const [year, setYear] = useState('');
@@ -13,7 +20,7 @@ const EditMovie = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const editedMovie = await updateMovie();
+    const editedMovie = await updateMovie(movie, id);
     console.log(editedMovie);
   };
 
@@ -55,9 +62,11 @@ const EditMovie = () => {
           <input name="url" required placeholder="Enter Image URL" value={url} onChange={((e) => setUrl(e.target.value))} />
         </label>
       </p>
-      <p>
-        <button type="submit">Edit Movie</button>
-      </p>
+
+      <button id={id} onClick={((e) => updateMovie(e.target.id))}>
+        Delete this Movie
+      </button>
+
     </form>
   );
 };
