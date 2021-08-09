@@ -1,19 +1,19 @@
 /* eslint-disable no-console */
 /* eslint-disable max-len */
-
 export const getMovies = async () => {
-  const res = await fetch(URL);
+  const res = await fetch('https://ivys-house-of-horror.herokuapp.com/api/movies/');
   const movies = await res.json();
+  console.log(movies);
   return movies;
 };
 
 export const getMovie = async (id) => {
-  const res = await fetch(`${URL}/${id}`);
+  const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${id}`);
   return res.json();
 };
 
 export const addMovie = async (movie) => {
-  const res = await fetch(URL, {
+  const res = await fetch('https://ivys-house-of-horror.herokuapp.com/api/movies', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(movie)
@@ -23,7 +23,7 @@ export const addMovie = async (movie) => {
 };
 
 export const deleteMovie = async (id) => {
-  const res = await fetch(`${URL}/${id}`, {
+  const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${id}`, {
     method: 'DELETE'
   });
   const deletedMovie = res.json();
@@ -31,7 +31,7 @@ export const deleteMovie = async (id) => {
 };
 
 export const updateMovie = async (movie) => {
-  const res = await fetch(`${URL}/${movie.id}`, {
+  const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${id}`, {
     method: 'PUT',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(movie)
@@ -39,6 +39,4 @@ export const updateMovie = async (movie) => {
   const updatedMovie = res.json();
   return updatedMovie;
 };
-
-
 

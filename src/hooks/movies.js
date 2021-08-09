@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { getMovies, getMovie } from '../services/movies-api';
 
-export const useMovies = (page) => {
+export const useMovies = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getMovies(page)
+    getMovies()
       .then(setMovies)
       .finally(() => setLoading(false));
-  }, [page]);
+  }, []);
 
   return { movies, loading };
 };
