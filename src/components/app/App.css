@@ -1,0 +1,43 @@
+body {
+  background: rgb(56, 56, 56);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+li{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 9px;
+}
+
+img{ 
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: left;
+}
+
+a {
+  text-decoration: none;
+  color: Black;
+}
+
+h1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
