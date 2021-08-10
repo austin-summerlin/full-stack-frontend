@@ -7,13 +7,9 @@ export default class Home extends Component {
     return (
       <div className={style.Home}>
         <header>
-          <h2>Welcome to Ivy's House of Horror</h2>
-
+          <h1>Welcome to Ivy&#39;s House of Horror</h1>
+          <h1><Link to="/movies"><p>Enter if you dare...</p></Link></h1>
         </header>
-
-        <p>
-          <Link to="/movies"><h1>Enter if you dare...</h1></Link>
-        </p>
       </div>
     );
   }

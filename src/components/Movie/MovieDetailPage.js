@@ -28,18 +28,19 @@ const MovieDetails = () => {
 
   return (
     <figure className={style.movie}>
-      <h1>{movie.title}</h1>
       <img src={movie.url} alt={movie.title} />
+      <h1>{movie.title}</h1>
       <figcaption>
         <p>Genre: {movie.genre}</p>
         <p>Year: {movie.year}</p>
         <p>Director: {movie.director}</p>
         <p>Country: {movie.country}</p>
+        <button onClick={handleClick}>Delete</button>
       </figcaption>
       <nav>
         <Link to={`/movies/${movie.id}/edit`}>Edit</Link>
-        <button onClick={handleClick}>Delete</button>
-        <Link to="/movies">Back</Link>
+
+        <Link to="/movies">Back to All Movies</Link>
       </nav>
     </figure>
   );

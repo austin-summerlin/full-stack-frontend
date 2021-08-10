@@ -1,5 +1,4 @@
 .Header {
-  padding: 20px;
   background: rgb(56, 56, 56);
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -24,4 +23,8 @@
   color: red;
   text-decoration: none;
   text-shadow: 1px 1px black;
+}
+
+.Header h2 {
+  width: 100%;
 }

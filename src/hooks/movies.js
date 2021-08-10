@@ -11,17 +11,19 @@ export const useMovies = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  return { movies, loading };
+  return { loading, movies };
 };
 
 export const useMovie = (id) => {
   const [movie, setMovie] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     getMovie(id)
-      .then(setMovie);
+      .then(setMovie)
+      .finally(() => setLoading(false));
   }, [id]);
-  console.log(movie);
-  return { movie };
+  return { loading, movie };
 };
 

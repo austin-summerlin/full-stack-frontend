@@ -1,0 +1,42 @@
+.FormPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+}
+
+.FormPage form{
+  border: solid 5px red;
+  color: red;
+  margin: 0;
+  padding: 10px;
+  width: fit-content;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormPage label{
+}
+
+.FormPage input{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding: 5px;
+  margin: 5px;
+}
+
+.FormPage button {
+  background-color: pink;
+  border: solid 5px pink;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}

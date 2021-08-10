@@ -4,3 +4,12 @@
   object-fit: fill;
   border: 1px solid #ccc;
 }
+
+h2 {
+  color: red;
+  text-align: center;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}

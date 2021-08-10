@@ -13,11 +13,11 @@ export const getMovie = async (id) => {
 export const addMovie = async (movie) => {
   const res = await fetch('https://ivys-house-of-horror.herokuapp.com/api/movies', {
     method: 'POST',
-    headers: { 'content-type': 'application/json' },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(movie)
   });
-  const newMovie = res.json();
-  return newMovie;
+  const json = await res.json();
+  return json;
 };
 
 export const deleteMovie = async (id) => {
@@ -28,8 +28,8 @@ export const deleteMovie = async (id) => {
   return deletedMovie;
 };
 
-export const updateMovie = async (movie, id) => {
-  const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${id}`, {
+export const updateMovie = async (movie) => {
+  const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${movie.id}`, {
     method: 'PUT',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(movie)

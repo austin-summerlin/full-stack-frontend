@@ -5,15 +5,8 @@
   justify-content: center;
 }
 
-.Home h2 {
-  text-align: center;
-  color: red;
-  font-size: 2em;
-  text-shadow: black 2px 2px;
-}
-
 .Home h1 {
-  color: black;
+  color: red;
   font-size: 2em;
   text-shadow: black 1px 1px;
 }
