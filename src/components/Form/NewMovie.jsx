@@ -9,6 +9,7 @@ import style from './NewMovie.css';
 
 const AddMovie = () => {
   const history = useHistory();
+  const [loading, setLoading] = useState(null);
 
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
@@ -44,6 +45,8 @@ const AddMovie = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setLoading(true);
+
     const newMovie = await addMovie({
       title,
       year,
@@ -53,9 +56,11 @@ const AddMovie = () => {
       url,
     });
     setMovie(newMovie);
+    setLoading(false);
     history.push(`/movies/${newMovie.id}`);
   };
 
+  if (loading) return <h1>Loading...</h1>;
   return (
     <section className={style.AddMovie}>
       <h1>Add a Movie</h1>

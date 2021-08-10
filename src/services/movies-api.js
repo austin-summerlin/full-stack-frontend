@@ -7,7 +7,8 @@ export const getMovies = async () => {
 
 export const getMovie = async (id) => {
   const res = await fetch(`https://ivys-house-of-horror.herokuapp.com/api/movies/${id}`);
-  return res.json();
+  const json = await res.json();
+  return json;
 };
 
 export const addMovie = async (movie) => {
