@@ -24,6 +24,7 @@ export const useMovie = (id) => {
       .then(setMovie)
       .finally(() => setLoading(false));
   }, [id]);
+  console.log(movie);
   return { loading, movie };
 };
 

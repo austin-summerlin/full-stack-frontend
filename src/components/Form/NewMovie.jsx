@@ -16,8 +16,9 @@ const AddMovie = () => {
   const [genre, setGenre] = useState('');
   const [director, setDirector] = useState('');
   const [country, setCountry] = useState('');
-  const [url, setUrl] = useState('');
+  const [image, setImage] = useState('');
   const [movie, setMovie] = useState({});
+
 
   const handleChange = ({ target }) => {
     switch (target.title) {
@@ -36,8 +37,8 @@ const AddMovie = () => {
       case 'country':
         setCountry(target.value);
         break;
-      case 'url':
-        setUrl(target.value);
+      case 'image':
+        setImage(target.value);
         break;
     }
   };
@@ -53,10 +54,14 @@ const AddMovie = () => {
       genre,
       director,
       country,
-      url,
+      image,
     });
     setMovie(newMovie);
+
     setLoading(false);
+
+
+
     history.push(`/movies/${newMovie.id}`);
   };
 

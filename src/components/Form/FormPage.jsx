@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import style from './FormPage.css';
 
-const FormPage = ({ title, genre, director, year, url, country, onChange, onSubmit }) => {
+const FormPage = ({ title, genre, director, year, image, country, onChange, onSubmit }) => {
   return (
     <section className={style.FormPage}>
       <form onSubmit={onSubmit}>
@@ -62,8 +62,8 @@ const FormPage = ({ title, genre, director, year, url, country, onChange, onSubm
           URL:
           <input
             required
-            name="url"
-            value={url}
+            name="image"
+            value={image}
             onChange={onChange}
           />
         </label>
@@ -82,7 +82,7 @@ FormPage.propTypes = {
   genre: PropTypes.string,
   director: PropTypes.string,
   year: PropTypes.number,
-  url: PropTypes.string,
+  image: PropTypes.string,
   country: PropTypes.string,
   onChange: PropTypes.func,
   onSubmit: PropTypes.func.isRequired,
