@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable keyword-spacing */
 import React from 'react';
 import { useMovies } from '../../hooks/movies';
@@ -16,7 +17,7 @@ const MovieList = () => {
       </Link>
     </li>
   ));
-  if (loading) return <h1>Loading</h1>;
+  if (loading) return <img className={style.loader} src="https://media4.giphy.com/media/Y8WwScv2FkZri/giphy.gif"></img>;
   return (
     <section className={style.MoviesList}>
       <h1>Movies</h1>
