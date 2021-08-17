@@ -3,31 +3,22 @@ body {
 }
 
 ul {
+  padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 10px;
   box-sizing: border-box;
-  padding: 10px;
   list-style: none;
   text-decoration: none;
 }
 
 li{
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   font-size: 9px;
-}
-
-img{ 
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  object-position: left;
 }
 
 a {

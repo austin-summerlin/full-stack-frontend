@@ -7,9 +7,10 @@
 }
 
 .title {
+  width: 175px;
   background-color: rgb(255, 233, 233);
   font-size: 1.3em;
-  padding: .3em;
+  padding: .2em;
 
   box-shadow: black 0px 5px 5px;
 }
