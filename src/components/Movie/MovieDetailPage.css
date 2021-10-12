@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.movie img {
+.movieimage {
   height:290px;
   width:220px;
   object-fit: contain;

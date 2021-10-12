@@ -8,16 +8,20 @@
 
 .title {
   width: 175px;
-  background-color: rgb(255, 233, 233);
+  background-color: rgb(255, 255, 255);
+  color: rgba(241, 20, 20, 0.877);
+  text-shadow: rgba(104, 23, 23, 0.89) 1px 1px 1px;
   font-size: 1.3em;
   padding: .2em;
 
-  box-shadow: black 0px 5px 5px;
+  box-shadow: rgba(255, 238, 139, 0.89) 0px 2px 2px;
 }
 
 .year {
   font-size: 1.3em;
-  background-color: rgb(255, 233, 233);
+  background-color: rgb(255, 255, 255);
+  color: rgba(241, 20, 20, 0.877);
+  text-shadow: rgba(104, 23, 23, 0.89) 1px 1px 1px;
   padding: .2em;
 
   box-shadow: black 0px 5px 5px;

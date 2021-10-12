@@ -15,7 +15,7 @@ const MovieDetails = () => {
 
     <>
       <figure className={style.movieDetailPage}>
-        <img src={movie.image} alt={movie.title} />
+        <img className={style.movieimage} src={movie.image} alt={movie.title} />
         <h1 className={style.title}>{movie.title}</h1>
         <figcaption >
           <p className={style.movie}>Genre: {movie.genre}</p>

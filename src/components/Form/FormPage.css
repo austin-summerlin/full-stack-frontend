@@ -19,9 +19,6 @@
   justify-content: center;
 }
 
-.FormPage label{
-}
-
 .FormPage input{
   display: flex;
   align-items: right;
