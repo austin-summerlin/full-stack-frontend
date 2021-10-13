@@ -3,10 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  font-family: 'Creepster', cursive;
+  color: rgb(102, 204, 19);
+  font-size: 2em;
+  text-shadow: black 0px 7px 7px;
 }
 
-.Home h1 {
-  color: red;
-  font-size: 2em;
-  text-shadow: black 1px 1px;
+.Home a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Creepster', cursive;
+  color: rgb(102, 204, 19);
+  font-size: 1.5em;
+  text-shadow: black 0px 7px 7px;
 }

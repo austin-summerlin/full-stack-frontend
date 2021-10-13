@@ -17,19 +17,14 @@ const MovieDetails = () => {
       <figure className={style.movieDetailPage}>
         <img className={style.movieimage} src={movie.image} alt={movie.title} />
         <h1 className={style.title}>{movie.title}</h1>
-        <figcaption >
-          <p className={style.movie}>Genre: {movie.genre}</p>
+        <figcaption className={style.movieInfo}>
           <p className={style.movie}>Year: {movie.year}</p>
+          <p className={style.movie}>Genre: {movie.genre}</p>
           <p className={style.movie}>Director: {movie.director}</p>
+          <p className={style.movie}>Writer(s): {movie.writer}</p>
+          <p className={style.movie}>Synopsis: {movie.synopsis}</p>
           <p className={style.movie}>Country: {movie.country}</p>
         </figcaption>
-        <p className={style.description}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Maiores voluptas corporis asperiores eaque pariatur quasi reprehenderit illum,
-          mollitia consequatur libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Maiores voluptas corporis asperiores eaque pariatur quasi reprehenderit illum,
-          mollitia consequatur libero.
-        </p>
         <nav>
           <Link className={style.backButton} to="/movies">Back</Link>
         </nav>
@@ -40,3 +35,7 @@ const MovieDetails = () => {
 };
 
 export default MovieDetails;
+
+
+// map through movie.genre and display them as a list
+

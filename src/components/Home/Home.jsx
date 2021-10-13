@@ -10,7 +10,7 @@ export default class Home extends Component {
           <div className={style.Home}>
             <header>
               <h1>Welcome to Ivy&#39;s House of Horror</h1>
-              <h1><Link to="/movies"><p>Enter if you dare...</p></Link></h1>
+              <Link to="/movies">Enter if you dare...</Link>
             </header>
           </div>
         </span>
