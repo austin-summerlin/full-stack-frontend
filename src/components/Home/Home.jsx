@@ -9,7 +9,7 @@ export default class Home extends Component {
         <span>
           <div className={style.Home}>
             <header>
-              <h1>Welcome to Ivy&#39;s House of Horror</h1>
+              <h1>Welcome to Ivy&#39;s <br></br>House of Horror</h1>
               <Link to="/movies">Enter if you dare...</Link>
             </header>
           </div>

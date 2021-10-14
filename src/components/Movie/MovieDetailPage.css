@@ -13,40 +13,35 @@
 }
 
 .title{
-  color: red;
   font-size: 1em;
+  text-shadow: rgba(255, 238, 139, 0.89) .5px .5px .5px;
   background-color: rgb(255, 255, 255);
   padding: .5em;
-  box-shadow: black 0px 5px 5px;
+  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
 }
 
 .movieInfo{
-  text-align: left;
+  font-size: .9em;
+  text-shadow: rgba(255, 238, 139, 0.89) .5px .5px .5px;
   background-color: rgb(255, 255, 255);
-  font-size: .8em;
   padding-left: .5em;
   padding-right: .5em;
-  box-shadow: black 0px 5px 5px;
+  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
 }
 
 .movie{
-  width: 18.3em;
+  width: 18.4em;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
 .backButton {
   display: flex;
-  justify-content:center;
-  align-items: center;
-  max-width: fit-content;
-  padding: .1em;
-  margin: 0;
-
-
+  margin-top: 1em;
+  padding: .3em;
+  font-size: .9em;
+  text-shadow: rgba(255, 238, 139, 0.89) .5px .5px .5px;
+  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
   background-color: rgb(255, 255, 255);
-  font-size: 1em;
-  padding-left: 1px;
-  padding-right: 1px; 
-  box-shadow: black 0px 5px 5px;
+
 }
