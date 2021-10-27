@@ -20,7 +20,7 @@ const MovieDetails = () => {
         <figcaption className={style.movieInfo}>
           <p className={style.movie}>Year: {movie.year}</p>
           <p className={style.movie}>Genre: {movie.genre}</p>
-          <p className={style.movie}>Director: {movie.director}</p>
+          <p className={style.movie}>Director: {movie.director[0]}</p>
           <p className={style.movie}>Writer(s): {movie.writer}</p>
           <p className={style.movie}>Synopsis: {movie.synopsis}</p>
           <p className={style.movie}>Country: {movie.country}</p>

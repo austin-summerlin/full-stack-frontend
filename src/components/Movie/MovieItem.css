@@ -2,24 +2,21 @@
   height:220px;
   width:150px;
   object-fit: fill;
-  border: 1px solid #ccc;
-  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
+  box-shadow:  rgba(74, 121, 52, 0.801) 0px 0px 9px 3px;
 }
 
 .title {
-  width: 175px;
-  background-color: rgb(255, 255, 255);
-  color: rgba(0, 0, 0, 0.877);
   font-size: 1.3em;
-  padding: .2em;
-
-  box-shadow: rgba(255, 238, 139, 0.89) 0px 2px 2px;
+  font-weight: 400;
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 5px 5px;
+  color: rgb(102, 204, 19);
+  background: rgb(0, 0, 0);
 }
 
 .year {
   font-size: 1.3em;
-  background-color: rgb(255, 255, 255);
-  padding: .2em;
-
-  box-shadow: rgba(255, 238, 139, 0.89) 0px 2px 2px;
+  font-weight: 400;
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 5px 5px;
+  color: rgb(102, 204, 19);
+  background: rgb(0, 0, 0);
 }

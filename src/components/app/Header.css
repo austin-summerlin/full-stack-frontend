@@ -1,7 +1,7 @@
 .Header {
   font-family: 'Creepster', cursive;
   color: rgb(102, 204, 19);
-  background: rgb(56, 56, 56);
+  background: rgb(0, 0, 0);
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
@@ -10,7 +10,7 @@
 .Header h1 {
 
   font-size: 2.5rem;
-  text-shadow: black 0px 7px 7px;
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 7px 7px;
   display: grid;
   justify-content: flex-start;
   padding-left: 35px;
@@ -26,7 +26,7 @@
   margin-left: 10px;
   color: rgb(102, 204, 19);
   text-decoration: none;
-  text-shadow: black 0px 5px 5px;
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 3px 3px;
 }
 
 .Header h2 {

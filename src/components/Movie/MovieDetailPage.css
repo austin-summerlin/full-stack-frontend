@@ -7,32 +7,36 @@
 }
 
 .movieimage {
-  height:290px;
-  width:220px;
-  object-fit: contain;
+  height:220px;
+  width:150px;
+  box-shadow:  rgba(74, 121, 52, 0.801) 0px 0px 9px 3px;
+  object-fit: fill;
 }
 
 .title{
-  font-size: 1em;
-  text-shadow: rgba(255, 238, 139, 0.89) .5px .5px .5px;
-  background-color: rgb(255, 255, 255);
-  padding: .5em;
-  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
+  font-size: .9em;
+  font-weight: 400;
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 5px 5px;
+  color: rgb(102, 204, 19);
+  background: rgb(0, 0, 0);
+  padding: .2em;
+
 }
 
 .movieInfo{
   font-size: .9em;
-  text-shadow: rgba(255, 238, 139, 0.89) .5px .5px .5px;
-  background-color: rgb(255, 255, 255);
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 5px 5px;
+  color: rgb(102, 204, 19);
+  background: rgb(0, 0, 0);
   padding-left: .5em;
   padding-right: .5em;
-  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
+  text-align: left;
 }
 
 .movie{
-  width: 18.4em;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  max-width: 30em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .backButton {
@@ -40,8 +44,9 @@
   margin-top: 1em;
   padding: .3em;
   font-size: .9em;
-  text-shadow: rgba(255, 238, 139, 0.89) .5px .5px .5px;
-  box-shadow: rgba(255, 238, 139, 0.89) 0px 1px 1px .5px;
-  background-color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-shadow: rgba(74, 121, 52, 0.801) 0px 5px 5px;
+  color: rgb(102, 204, 19);
+  background: rgb(0, 0, 0);
 
 }
